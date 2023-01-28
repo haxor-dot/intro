@@ -1,5 +1,8 @@
 body{
-    animation: bgcolor 5s ease-out infinite;
+    background: linear-gradient(-45deg, #16213E, #0F3460, #533483, #E94560);
+    font-weight: bold;
+    background-size: 200% 200%;
+    animation: bgcolor 15s ease infinite;
 }
 
 .frame{
@@ -20,7 +23,7 @@ body{
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
-    animation: 
+    animation:
         typing 3.5s steps(25, end),
         blink-caret .75s step-end infinite;
 }
@@ -31,13 +34,13 @@ body{
 
 @keyframes bgcolor {
     0%{
-        background-color: #060608;
+        background-position: 0% 50%;
     }
     50%{
-        background-color: #090615;
+        background-position: 100% 50%;
     }
     100%{
-        background-color: #060608;
+        background-position: 0% 50%;
     }
     
 }
